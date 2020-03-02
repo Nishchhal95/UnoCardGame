@@ -1,0 +1,2815 @@
+fileFormatVersion: 2
+guid: 1ddc3370067cdbd45b583b1dd94de551
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5599343965462836308
+    second: Red_0
+  - first:
+      213: 5266570661894155691
+    second: Red_1
+  - first:
+      213: 7061708438759257629
+    second: Red_2
+  - first:
+      213: 7766401709742687945
+    second: Red_3
+  - first:
+      213: -3562370360615027939
+    second: Red_4
+  - first:
+      213: 7446547744510354507
+    second: Red_5
+  - first:
+      213: 7216877850615765096
+    second: Red_6
+  - first:
+      213: 7357537249370846545
+    second: Red_7
+  - first:
+      213: -392153834752820592
+    second: Red_8
+  - first:
+      213: 6681802455695434075
+    second: Red_9
+  - first:
+      213: -1633859002777935557
+    second: Red_Skip
+  - first:
+      213: 8985728250773599299
+    second: Red_Reverse
+  - first:
+      213: 266388688804252843
+    second: Red_DrawTwo
+  - first:
+      213: 8148493833355200017
+    second: Wild_1
+  - first:
+      213: -6107484535699626299
+    second: Yellow_0
+  - first:
+      213: -4017716852017901009
+    second: Yellow_1
+  - first:
+      213: -440406334464591631
+    second: Yellow_2
+  - first:
+      213: 4758798849136266780
+    second: Yellow_3
+  - first:
+      213: 750118951210671421
+    second: Yellow_4
+  - first:
+      213: -3984733656275173941
+    second: Yellow_5
+  - first:
+      213: -447831963705014212
+    second: Yellow_6
+  - first:
+      213: 3826307325578836447
+    second: Yellow_7
+  - first:
+      213: 901936161616665648
+    second: Yellow_8
+  - first:
+      213: -4603566739425241353
+    second: Yellow_9
+  - first:
+      213: 4710164427027211592
+    second: Yellow_Skip
+  - first:
+      213: 4540462032608174116
+    second: Yellow_Reverse
+  - first:
+      213: -2254817687601100786
+    second: Yellow_DrawTwo
+  - first:
+      213: -2254532577116935308
+    second: Wild_2
+  - first:
+      213: 279561782671116157
+    second: Green_0
+  - first:
+      213: -7725676507077723452
+    second: Green_1
+  - first:
+      213: 3443792933533749386
+    second: Green_2
+  - first:
+      213: 8274838888221338003
+    second: Green_3
+  - first:
+      213: 7789909512952910208
+    second: Green_4
+  - first:
+      213: 2339026398457393269
+    second: Green_5
+  - first:
+      213: -3883168537037660984
+    second: Green_6
+  - first:
+      213: 7076578813461815192
+    second: Green_7
+  - first:
+      213: 2298678330879298706
+    second: Green_8
+  - first:
+      213: -2002310853936510545
+    second: Green_9
+  - first:
+      213: 6620921873875888619
+    second: Green_Skip
+  - first:
+      213: 6635108686337554715
+    second: Green_Reverse
+  - first:
+      213: 8665757529042963006
+    second: Green_DrawTwo
+  - first:
+      213: -3747947801458522320
+    second: Wild_3
+  - first:
+      213: -326077436832648554
+    second: Blue_0
+  - first:
+      213: -2741364702139258073
+    second: Blue_1
+  - first:
+      213: -3815469118179461610
+    second: Blue_2
+  - first:
+      213: -9135127437839750213
+    second: Blue_3
+  - first:
+      213: 2277057255934450997
+    second: Blue_4
+  - first:
+      213: -5493593948222827257
+    second: Blue_5
+  - first:
+      213: -4677298314851440603
+    second: Blue_6
+  - first:
+      213: -4384566741466083430
+    second: Blue_7
+  - first:
+      213: 2849745096760462707
+    second: Blue_8
+  - first:
+      213: -3579354862644595077
+    second: Blue_9
+  - first:
+      213: -3066634284682800475
+    second: Blue_Skip
+  - first:
+      213: -1806607481622619055
+    second: Blue_Reverse
+  - first:
+      213: -5406920978752026505
+    second: Blue_DrawTwo
+  - first:
+      213: 3063204843270443066
+    second: Wild_4
+  - first:
+      213: -3664243943075686223
+    second: Uno Cards Deck_56
+  - first:
+      213: 5593399709834859367
+    second: Uno Cards Deck_57
+  - first:
+      213: -8771012788326578443
+    second: Uno Cards Deck_58
+  - first:
+      213: -5193217041197687901
+    second: Uno Cards Deck_59
+  - first:
+      213: 3441590114857659603
+    second: Uno Cards Deck_60
+  - first:
+      213: -7144331903050764377
+    second: Uno Cards Deck_61
+  - first:
+      213: -9210303708789544087
+    second: Uno Cards Deck_62
+  - first:
+      213: -2071154569382904593
+    second: Uno Cards Deck_63
+  - first:
+      213: 2219084923279325844
+    second: Uno Cards Deck_64
+  - first:
+      213: -2579554339213875405
+    second: Uno Cards Deck_65
+  - first:
+      213: -5421838503583949377
+    second: Uno Cards Deck_66
+  - first:
+      213: -2692365192870650975
+    second: Uno Cards Deck_67
+  - first:
+      213: 7400698818854668243
+    second: Uno Cards Deck_68
+  - first:
+      213: 7676745815286912265
+    second: Draw4_1
+  - first:
+      213: -1540813160872467154
+    second: Uno Cards Deck_70
+  - first:
+      213: -4188265102507206361
+    second: Uno Cards Deck_71
+  - first:
+      213: 4992761346217361671
+    second: Uno Cards Deck_72
+  - first:
+      213: -8909711164792227459
+    second: Uno Cards Deck_73
+  - first:
+      213: -1981283202658749068
+    second: Uno Cards Deck_74
+  - first:
+      213: 3254379999959919054
+    second: Uno Cards Deck_75
+  - first:
+      213: 8080537997738854292
+    second: Uno Cards Deck_76
+  - first:
+      213: -8619801925098868484
+    second: Uno Cards Deck_77
+  - first:
+      213: -471641091856946784
+    second: Uno Cards Deck_78
+  - first:
+      213: 7611399297641247651
+    second: Uno Cards Deck_79
+  - first:
+      213: 8705751216522900423
+    second: Uno Cards Deck_80
+  - first:
+      213: 6690560784262486638
+    second: Uno Cards Deck_81
+  - first:
+      213: 1866854674572778225
+    second: Uno Cards Deck_82
+  - first:
+      213: -9204567271736437119
+    second: Draw4_2
+  - first:
+      213: 670638296938288993
+    second: Uno Cards Deck_84
+  - first:
+      213: 8875961934290437328
+    second: Uno Cards Deck_85
+  - first:
+      213: 6818741565056904121
+    second: Uno Cards Deck_86
+  - first:
+      213: 8124126836782229402
+    second: Uno Cards Deck_87
+  - first:
+      213: -7359959830693159601
+    second: Uno Cards Deck_88
+  - first:
+      213: -6148473961835180379
+    second: Uno Cards Deck_89
+  - first:
+      213: 5335261054918517172
+    second: Uno Cards Deck_90
+  - first:
+      213: 2338735265167463241
+    second: Uno Cards Deck_91
+  - first:
+      213: 4669992364817504108
+    second: Uno Cards Deck_92
+  - first:
+      213: 2967917615921310454
+    second: Uno Cards Deck_93
+  - first:
+      213: 6774529253649616121
+    second: Uno Cards Deck_94
+  - first:
+      213: 571732779813400910
+    second: Uno Cards Deck_95
+  - first:
+      213: 71876794573655367
+    second: Uno Cards Deck_96
+  - first:
+      213: 937515281595949191
+    second: Draw4_3
+  - first:
+      213: -5339128255799913135
+    second: Uno Cards Deck_98
+  - first:
+      213: -1752426605083373098
+    second: Uno Cards Deck_99
+  - first:
+      213: -2244544263257646337
+    second: Uno Cards Deck_100
+  - first:
+      213: 9110575256561906588
+    second: Uno Cards Deck_101
+  - first:
+      213: 823882252629543819
+    second: Uno Cards Deck_102
+  - first:
+      213: -6905119606800303090
+    second: Uno Cards Deck_103
+  - first:
+      213: -3788542056294029984
+    second: Uno Cards Deck_104
+  - first:
+      213: -5151418607938381513
+    second: Uno Cards Deck_105
+  - first:
+      213: -958137388361212679
+    second: Uno Cards Deck_106
+  - first:
+      213: 5922922448226832255
+    second: Uno Cards Deck_107
+  - first:
+      213: -125949164688332678
+    second: Uno Cards Deck_108
+  - first:
+      213: 1593218561093010066
+    second: Uno Cards Deck_109
+  - first:
+      213: -8931621470455604224
+    second: Uno Cards Deck_110
+  - first:
+      213: 7838494609628335471
+    second: Draw4_4
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Red_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2522
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9556e1c18fb03ac4e9bc7a79726a1e29
+      internalID: -5599343965462836308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_1
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2522
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd797cdaf0bc26f4081ab317f6c13df4
+      internalID: 5266570661894155691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_2
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2522
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f75adf0347c0f9f4d85a6132ee294d8f
+      internalID: 7061708438759257629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_3
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 2522
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b5d448a31970314ba9211d80cad4dea
+      internalID: 7766401709742687945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_4
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2522
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081ecc0342d7b19489d07905e33e0208
+      internalID: -3562370360615027939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_5
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2522
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c743c17e7334b43a12cf0f5d6c763f
+      internalID: 7446547744510354507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_6
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2522
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 263f4a6f354d28947b0a7dddec4b61b2
+      internalID: 7216877850615765096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_7
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 2522
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f409173c7825647b8cc604f20aec6f
+      internalID: 7357537249370846545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_8
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2522
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a7dd934187b7034bbcc1486bd6e353c
+      internalID: -392153834752820592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_9
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 2522
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c8c7313af1b45b488f1e920e1383290
+      internalID: 6681802455695434075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Skip
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2522
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f67fb4359b57f409feeb605a5836bd
+      internalID: -1633859002777935557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Reverse
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 2522
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f986632f549fe814ca14b6362271811d
+      internalID: 8985728250773599299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_DrawTwo
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 2522
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d8aeb1b653c05e44975a83d7b072858
+      internalID: 266388688804252843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wild_1
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 2522
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 630ce27994a31c847b03fa8d9f7c3be8
+      internalID: 8148493833355200017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2162
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55175da61a306fd4cad2f8aeac8b77db
+      internalID: -6107484535699626299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_1
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2162
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60c98af388f8a804ea4eceba146846ef
+      internalID: -4017716852017901009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_2
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2162
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc5aee70b59e3924cb61b83d749e7111
+      internalID: -440406334464591631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_3
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 2162
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f97f360a9ad499f45b9a5b4ae4269812
+      internalID: 4758798849136266780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_4
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2162
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3c5da073ccaa9346849a9340a7e181f
+      internalID: 750118951210671421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_5
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2162
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 700343e1dec910040b6ccfbce4bf6f5a
+      internalID: -3984733656275173941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_6
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2162
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39350a8c0fda03244ab9968c81d47253
+      internalID: -447831963705014212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_7
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 2162
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a1fa3bf0845d64ab7c3095bf65dec2
+      internalID: 3826307325578836447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_8
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2162
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a155419339b364b9612a06a9b2c819
+      internalID: 901936161616665648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_9
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 2162
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d94c0d2a6a105d499f226e8dabd90d9
+      internalID: -4603566739425241353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_Skip
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2162
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9df3cc1c44718d24ca894ea193d0a703
+      internalID: 4710164427027211592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_Reverse
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 2162
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 681402a3d536249449ad4ad7d8d327a7
+      internalID: 4540462032608174116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_DrawTwo
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 2162
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc550aef687529c4d801aef7be49ecd7
+      internalID: -2254817687601100786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wild_2
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 2162
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd5a8ae3d9885a4881f2307e03ff47e
+      internalID: -2254532577116935308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1802
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de86f6c0c950587488e9689cee77901d
+      internalID: 279561782671116157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_1
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1802
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 394ea82addecab543ba42952bafefc79
+      internalID: -7725676507077723452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_2
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1802
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5745f9b3d89565043b858be2e3d3c5f5
+      internalID: 3443792933533749386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_3
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1802
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8871ae914d449fc4f83679274092e812
+      internalID: 8274838888221338003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_4
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1802
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd10920e554940541b1c777d4edfb597
+      internalID: 7789909512952910208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_5
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1802
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8014b9a50507e349ba66d683b27b0e0
+      internalID: 2339026398457393269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_6
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1802
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4afd0d56af0bfa74694e99082d0295ed
+      internalID: -3883168537037660984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_7
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 1802
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f68c1f331cd939141a385fdd3b0e6f69
+      internalID: 7076578813461815192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_8
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1802
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bda1ccae0918adc4383dd49d4569d4dd
+      internalID: 2298678330879298706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_9
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 1802
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3632cb60b296d5d4993857c439ffce56
+      internalID: -2002310853936510545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Skip
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1802
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15345adffae2dbd4ea6d4cc88f6eb68f
+      internalID: 6620921873875888619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Reverse
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 1802
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce3a0eb7e4c7d4e4bae4605aba94a30a
+      internalID: 6635108686337554715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_DrawTwo
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 1802
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de2dfd1fd91c9c48be4d1ea01d3284e
+      internalID: 8665757529042963006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wild_3
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 1802
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af0f697b2d9e77145ab662137fe7eafd
+      internalID: -3747947801458522320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1442
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a866f466a636734dbf0a417a6e84827
+      internalID: -326077436832648554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_1
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1442
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7180d7a93b7e9b24fb4519962d3885e7
+      internalID: -2741364702139258073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_2
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1442
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c01a81d3df6f144c8313e54a2b15392
+      internalID: -3815469118179461610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_3
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1442
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb896317c590d14990b56d62d5b2873
+      internalID: -9135127437839750213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_4
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1442
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 405dc695560b6664fb450fcd2275dd50
+      internalID: 2277057255934450997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_5
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1442
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba064d3d7408db34d9d79d9c3fc8d52e
+      internalID: -5493593948222827257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_6
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1442
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccbd289f91917d54a81069707ba52e63
+      internalID: -4677298314851440603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_7
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 1442
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a1877c98365c58448a4c796b968a861
+      internalID: -4384566741466083430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_8
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1442
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df8ee9d6d2e67d54699c0e5317fc4e6d
+      internalID: 2849745096760462707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_9
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 1442
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e28bf03587e1454e8a3b00c9aae5f4f
+      internalID: -3579354862644595077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Skip
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1442
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3484fa3969a70b84bb9fac5010bd03d7
+      internalID: -3066634284682800475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Reverse
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 1442
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2b45c6b49880b3468ad289afc8aa1d2
+      internalID: -1806607481622619055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_DrawTwo
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 1442
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63bd7446b392af04d9e1a1f494d37aa8
+      internalID: -5406920978752026505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wild_4
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 1442
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bcfe5c6bca6be142b4060f317ed48b2
+      internalID: 3063204843270443066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1082
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a14f4e832615e478582aea0df261d3
+      internalID: -3664243943075686223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_57
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1082
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf7a30b087ab9894498ae159241cbed5
+      internalID: 5593399709834859367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_58
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1082
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ce688f64e067344e8d9b4d5f35859a1
+      internalID: -8771012788326578443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_59
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1082
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d90b6151cde7ed643918f6e8b0c4a7ba
+      internalID: -5193217041197687901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_60
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1082
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 161a3e7c6ebbfd8489b358ab851657eb
+      internalID: 3441590114857659603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_61
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1082
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2822785ad3d2554792fdb72979c2172
+      internalID: -7144331903050764377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_62
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1082
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1536324329d86fb4d905e8ae5eecbaee
+      internalID: -9210303708789544087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_63
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 1082
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22019b325dfe5a2419db10f0a083f77c
+      internalID: -2071154569382904593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_64
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1082
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ee77da7a57d104698d8f1d6075fb17
+      internalID: 2219084923279325844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_65
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 1082
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90206f568a6601f4e8f0f67a74bc95e8
+      internalID: -2579554339213875405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_66
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1082
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cb9ed6821e1f2548a23f38695c9f0cd
+      internalID: -5421838503583949377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_67
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 1082
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3e0f7e36dd4bfb4385c26ddde8964df
+      internalID: -2692365192870650975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_68
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 1082
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e0d8debee698944197bba6de12ac22a
+      internalID: 7400698818854668243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Draw4_1
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 1082
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab5404b2643703f458a552a1c4892fe9
+      internalID: 7676745815286912265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 722
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08cbb95c514a0dc45ba278495cf7ff7f
+      internalID: -1540813160872467154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_71
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 722
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e64e73e59854ab047a2306dc1055ed4a
+      internalID: -4188265102507206361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_72
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 722
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b882fdfa1ff0d2245a40262b96f9ee36
+      internalID: 4992761346217361671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_73
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 722
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f640a838c128e4b99a2449bdbe2ff0
+      internalID: -8909711164792227459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_74
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 722
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bed0637aea8820458c2d11fb6e20c93
+      internalID: -1981283202658749068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_75
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 722
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d25600c2c99c854eb9bd583459a75c2
+      internalID: 3254379999959919054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_76
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 722
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01621e7f1170cd4478c6a8cfb1edfe6e
+      internalID: 8080537997738854292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_77
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 722
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a3ce0b83ca3e840ae9443183258024
+      internalID: -8619801925098868484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_78
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 722
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcca0bf8028700b468e64a172925a10c
+      internalID: -471641091856946784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_79
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 722
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f9592967126bc4892c6796c0032aea
+      internalID: 7611399297641247651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_80
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 722
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12dedfffc0ad7c54b8b6a94a497c6dff
+      internalID: 8705751216522900423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_81
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 722
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 231b3268071d07346b92241f6c81f2a6
+      internalID: 6690560784262486638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_82
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 722
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d0d456875fee9d4a87882ad8f0bb8aa
+      internalID: 1866854674572778225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Draw4_2
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 722
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9abf538532a3f14daffceda2e1a678c
+      internalID: -9204567271736437119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 362
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c9ea99a24e456459a19e9911a8df79
+      internalID: 670638296938288993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_85
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 362
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f21b504e7464baf4c8ecaffcf1354fa5
+      internalID: 8875961934290437328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_86
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 362
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49aa49b5a41f09249a86e4fab2806a31
+      internalID: 6818741565056904121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_87
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 362
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 708b7f6f7840fff40a382b8c4fe69623
+      internalID: 8124126836782229402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_88
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 362
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 190b33fde589e4142801153b26dbe56a
+      internalID: -7359959830693159601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_89
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 362
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3615f454f2cfb134085189891cec8643
+      internalID: -6148473961835180379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_90
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 362
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea8efb17812f6904089d66ea37fe3dba
+      internalID: 5335261054918517172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_91
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 362
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d818fc6bb3d89dc48b4cb70ef7ba5052
+      internalID: 2338735265167463241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_92
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 362
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1321def7a72dda948ac67bbb886f5ba5
+      internalID: 4669992364817504108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_93
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 362
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b33c12afc0ce14892a455bd64c7db4
+      internalID: 2967917615921310454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_94
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 362
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1783368ec36e9e743afc90ad13f4d270
+      internalID: 6774529253649616121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_95
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 362
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dafdf99cccbb202479b98e590ec0d9a7
+      internalID: 571732779813400910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_96
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 362
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b94b8a9179d99494387daa214a12d0ce
+      internalID: 71876794573655367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Draw4_3
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 362
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d468cd3b30c4f142adca6237549ad74
+      internalID: 937515281595949191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_98
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01f150b8febb7d469716602edd89d20
+      internalID: -5339128255799913135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_99
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a89a9e7bd5e0642b82334cf746b600
+      internalID: -1752426605083373098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_100
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd7181c150e77247b1de0f3fb51a09e
+      internalID: -2244544263257646337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_101
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 2
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f77b46da815b77741a1a58026b7d34a1
+      internalID: 9110575256561906588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_102
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b5acc8487c19f04e98949604de72865
+      internalID: 823882252629543819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_103
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258bc0d176f395a45b6f3f2fc7457816
+      internalID: -6905119606800303090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_104
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a422505760ae85549894acfa7e6652b8
+      internalID: -3788542056294029984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_105
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 2
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be3f5b3dd46e824bb57e53f71038236
+      internalID: -5151418607938381513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_106
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ce39e3b5197a6b43b5992514b58077f
+      internalID: -958137388361212679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_107
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 2
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ddd0f04c6502194ea2ce01da79dd766
+      internalID: 5922922448226832255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_108
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2401a4c183db0141bd25b8daea5e307
+      internalID: -125949164688332678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_109
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 2
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc490b746b5ab2469c0654f901c33c5
+      internalID: 1593218561093010066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uno Cards Deck_110
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 2
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c4c86245d82a1945847d496e9e8cb77
+      internalID: -8931621470455604224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Draw4_4
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 2
+        width: 240
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0da3106428ec6bb4485b483b17e48eb6
+      internalID: 7838494609628335471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d1978b735d4aec44a8c4f333c9f5e0c0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

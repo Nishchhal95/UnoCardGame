@@ -8,50 +8,57 @@ using UnityEngine;
 public class _GameManager : MonoBehaviour
 {
     public int playerCount;
+    public int initialCardsCount = 7;
+
     public CardDealer cardDealer;
 
-    public Card[] cardsDuplicateArray;
+    public GameObject playerPrefab;
 
-    public List<Card> cardList = new List<Card>();
+    public CardModel[] cardsDuplicateArray;
+
+    public List<CardModel> cardList = new List<CardModel>();
+
+    public Sprite[] cardImages;
 
     private void Start()
     {
-        cardList = cardDealer.cardsDeck.ToList();
+        //cardList = cardDealer.cardsDeck.ToList();
 
-        cardsDuplicateArray = new Card[cardDealer.cardsDeck.Length];
-        for (int i = 0; i < cardDealer.cardsDeck.Length; i++)
-        {
-            Card card = new Card()
-            {
-                IsSpecial = cardDealer.cardsDeck[i].IsSpecial,
-                SpecialCardType = cardDealer.cardsDeck[i].SpecialCardType,
-                IsWild = cardDealer.cardsDeck[i].IsWild,
-                WildCardType = cardDealer.cardsDeck[i].WildCardType,
-                CardColor = cardDealer.cardsDeck[i].CardColor,
-                CardNumber = cardDealer.cardsDeck[i].CardNumber,
-                cardImage = cardDealer.cardsDeck[i].cardImage
-            };
+        //cardsDuplicateArray = new CardModel[cardDealer.cardsDeck.Length];
+        //for (int i = 0; i < cardDealer.cardsDeck.Length; i++)
+        //{
+        //    CardModel card = new CardModel()
+        //    {
+        //        IsSpecial = cardDealer.cardsDeck[i].IsSpecial,
+        //        SpecialCardType = cardDealer.cardsDeck[i].SpecialCardType,
+        //        IsWild = cardDealer.cardsDeck[i].IsWild,
+        //        WildCardType = cardDealer.cardsDeck[i].WildCardType,
+        //        CardColor = cardDealer.cardsDeck[i].CardColor,
+        //        CardNumber = cardDealer.cardsDeck[i].CardNumber,
+        //        cardImage = cardDealer.cardsDeck[i].cardImage
+        //    };
 
-            cardsDuplicateArray[i] = card;
-        }
+        //    cardsDuplicateArray[i] = card;
+        //}
 
-        CreatePlayers();
+        //CreatePlayers();
     }
 
     private void CreatePlayers()
     {
         for (int i = 0; i < playerCount; i++)
         {
-            GameObject playerGameObject = new GameObject("Player " + (i + 1));
-            Player playerComponent = playerGameObject.AddComponent<Player>();
+            GameObject playerGameObject = Instantiate(playerPrefab, transform);
+            PlayerController playerController = playerGameObject.GetComponent<PlayerController>();
 
-            playerComponent.CardList = PickCards(7);
+            List<CardModel> cards = PickCards(initialCardsCount);
+            playerController.SetInitialCards(cards);
         }
     }
 
-    private List<Card> PickCards(int count)
+    private List<CardModel> PickCards(int count)
     {
-        List<Card> pickedCards = new List<Card>();
+        List<CardModel> pickedCards = new List<CardModel>();
 
         Shuffle(cardList);
 
