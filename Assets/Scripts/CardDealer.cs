@@ -9,18 +9,37 @@ public class CardDealer : MonoBehaviour
     public CardModel[] cards = new CardModel[60];
 
     //Card Deck To use
-    public CardModel[] cardsDeck;
+    public List<CardModel> cardsDeck;
 
     public Sprite[] cardSprites;
 
-    private void Awake()
+    
+    public void Init()
     {
+        //Picking up card Images from a SpriteSheet
         GetCardImages();
+
+        //Setting Up Cards from Images
         SetUpBaseCards();
+
+        //Initializing the Card Deck
         InitializeCardDeck();
 
         //TODO : Add More Game Logic
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     private void GetCardImages()
     {
@@ -66,6 +85,7 @@ public class CardDealer : MonoBehaviour
 
                     if (cardNumber == "Skip" || cardNumber == "Reverse" || cardNumber == "DrawTwo")
                     {
+                        cards[i].CardNumber = -1;
                         cards[i].IsSpecial = true;
                         if (Enum.TryParse(cardNumber, out SpecialCard _specialCard))
                         {
@@ -95,12 +115,16 @@ public class CardDealer : MonoBehaviour
             {
                 if(cardColor == "Wild")
                 {
+                    cards[i].CardNumber = -1;
+                    cards[i].CardColor = CardColor.None;
                     cards[i].IsWild = true;
                     cards[i].WildCardType = WildCard.Wild;
                 }
 
                 else if(cardColor == "Draw4")
                 {
+                    cards[i].CardNumber = -1;
+                    cards[i].CardColor = CardColor.None;
                     cards[i].IsWild = true;
                     cards[i].WildCardType = WildCard.DrawFour;
                 }
@@ -110,7 +134,7 @@ public class CardDealer : MonoBehaviour
 
     private void InitializeCardDeck()
     {
-        cardsDeck = new CardModel[cards.Length * 2];
+        cardsDeck = new List<CardModel>();
         int deckIndex = 0;
         for (int i = 0; i < cards.Length; i++)
         {
@@ -127,7 +151,7 @@ public class CardDealer : MonoBehaviour
                 CardNumber = cards[i].CardNumber,
                 cardImage = cards[i].cardImage
             };
-            cardsDeck[deckIndex] = card;
+            cardsDeck.Add(card);
             deckIndex++;
         }
 
@@ -146,7 +170,7 @@ public class CardDealer : MonoBehaviour
                 CardNumber = cards[i].CardNumber,
                 cardImage = cards[i].cardImage
             };
-            cardsDeck[deckIndex] = card;
+            cardsDeck.Add(card);
             deckIndex++;
         }
     }

@@ -34,6 +34,7 @@ public class CardModel
 //Card Color
 public enum CardColor
 {
+    None,
     Red,
     Yellow,
     Green,

@@ -8,7 +8,10 @@ public class PlayerModel
     public Transform cardHolder;
     public GameObject cardPrefab;
 
-    public List<CardModel> CardList
+    public string playerName;
+    public int playerID;
+
+    public List<CardController> CardList
     {
         get
         {
@@ -20,5 +23,5 @@ public class PlayerModel
             cardList = value;
         }
     }
-    [SerializeField] private List<CardModel> cardList = new List<CardModel>();
+    [SerializeField] private List<CardController> cardList = new List<CardController>();
 }
