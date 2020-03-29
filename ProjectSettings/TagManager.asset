@@ -41,3 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Card
+    uniqueID: 2370668853
+    locked: 0
+  - name: Table
+    uniqueID: 3858321757
+    locked: 0

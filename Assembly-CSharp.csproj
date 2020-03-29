@@ -112,6 +112,8 @@
     <Compile Include="Assets\Scripts\CardDealer.cs" />
     <Compile Include="Assets\Scripts\GameEventManager.cs" />
     <Compile Include="Assets\Scripts\GameRules.cs" />
+    <Compile Include="Assets\Scripts\MenuUIManager.cs" />
+    <Compile Include="Assets\Scripts\NetworkManager.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerModel.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerView.cs" />

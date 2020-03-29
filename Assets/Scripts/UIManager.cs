@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class UIManager : MonoBehaviour
@@ -9,6 +10,11 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private GameObject colorSelectPanel;
     private Action<CardColor> onCompleteColorSelectAction;
+
+    [SerializeField] private GameObject gameCreatedUI;
+    [SerializeField] private GameObject gameCreatedUITweenBase;
+    [SerializeField] private TextMeshProUGUI roomNameText;
+    private string ROOM_NAME_FORMAT = "Your Room Code is : {0}";
 
     private void Awake()
     {
@@ -37,5 +43,24 @@ public class UIManager : MonoBehaviour
         onCompleteColorSelectAction?.Invoke(cardColorToEnum);
         LeanTween.scale(colorSelectPanel.transform.GetChild(0).gameObject, new Vector3(0, 0, 0), .5f).setEaseInCubic().setOnComplete(() => { colorSelectPanel.SetActive(false); });
 
+    }
+
+    public void OnShareClick()
+    {
+        //TODO : ADD SHARING OPTION
+
+    }
+
+    public void DisplayGameCreatedPage(string roomName)
+    {
+        roomNameText.SetText(string.Format(ROOM_NAME_FORMAT, roomName));
+        gameCreatedUITweenBase.transform.localScale = new Vector3(0, 0, 0);
+        gameCreatedUI.SetActive(true);
+        LeanTween.scale(gameCreatedUITweenBase, new Vector3(1, 1, 1), .25f).setEaseInOutCubic();
+    }
+
+    public void OnDisplayGameCreatePageCloseClick()
+    {
+        LeanTween.scale(gameCreatedUITweenBase, new Vector3(0, 0, 0), .25f).setEaseInOutCubic().setOnComplete(() => { gameCreatedUI.SetActive(false); });
     }
 }

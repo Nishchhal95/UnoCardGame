@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Photon.Pun;
+using Photon.Realtime;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,8 +36,15 @@ public class _GameManager : Singleton<_GameManager>
 
     public CardController lastCardController = null;
 
+    [SerializeField] private PhotonView photonView;
+
     private void Start()
     {
+        photonView = GetComponent<PhotonView>();
+        if (NetworkManager.isGameCreated)
+        {
+            UIManager.Instance.DisplayGameCreatedPage(PhotonNetwork.CurrentRoom.Name);
+        }
         StartGame();
     }
 
@@ -51,20 +60,32 @@ public class _GameManager : Singleton<_GameManager>
     {
         GameEventManager.onTurnOver += OnTurnComplete;
         GameEventManager.onCardPlayed += OnCardPlayed;
+        NetworkManager.onPhotonPlayerEnteredRoom += OnPlayerJoined;
     }
 
     private void OnDisable()
     {
         GameEventManager.onTurnOver -= OnTurnComplete;
         GameEventManager.onCardPlayed -= OnCardPlayed;
+        NetworkManager.onPhotonPlayerEnteredRoom -= OnPlayerJoined;
+    }
+
+    private void OnPlayerJoined(Player photonPlayer)
+    {
+        StartGame();
     }
 
     private void StartGame()
     {
+        if(PhotonNetwork.CurrentRoom.PlayerCount <= 1)
+        {
+            return;
+        }
         //Initialize Cards
         cardDealer.Init();
         Debug.Log("Cards are Ready...");
 
+        playerCount = PhotonNetwork.CurrentRoom.PlayerCount;
         //Spawn Players
         SpawnPlayers(playerCount);
 
@@ -75,7 +96,13 @@ public class _GameManager : Singleton<_GameManager>
         PlayFirstCard();
 
         //Setup TurnManager
+        
+    }
 
+    [PunRPC]
+    public void OnAwakeRPC()
+    {
+        Debug.Log("Card Played");
     }
 
     //Turn Complete
@@ -141,6 +168,15 @@ public class _GameManager : Singleton<_GameManager>
 
     public bool isItMyTurn(int playerID)
     {
+        if(PhotonNetwork.PlayerList[playerID].NickName.Equals(PhotonNetwork.LocalPlayer.NickName))
+        {
+            return true;
+        }
+
+        else
+        {
+            return false;
+        }
         PlayerController currentTurnPlayer = players[turnManager.currentTurn];
         if(currentTurnPlayer.playerModel.playerID == playerID)
         {
