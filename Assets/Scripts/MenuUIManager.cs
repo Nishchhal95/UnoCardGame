@@ -22,6 +22,8 @@ public class MenuUIManager : MonoBehaviour
     [SerializeField] private Image photonStatusImage;
     [SerializeField] private TextMeshProUGUI photonStatusText;
 
+    [SerializeField] private TMP_InputField playerNameInputField;
+
     private void Start()
     {
         NetworkManager.isGameCreated = false;
@@ -74,7 +76,8 @@ public class MenuUIManager : MonoBehaviour
 
     public void OnCreateGameClick()
     {
-        if(!NetworkManager.Instance.IsConnected())
+        Photon.Pun.PhotonNetwork.LocalPlayer.NickName = playerNameInputField.text.Trim();
+        if (!NetworkManager.Instance.IsConnected())
         {
             return;
         }
@@ -92,6 +95,7 @@ public class MenuUIManager : MonoBehaviour
 
     public void OnJoinGameClick()
     {
+        Photon.Pun.PhotonNetwork.LocalPlayer.NickName = playerNameInputField.text.Trim();
         if (!NetworkManager.Instance.IsConnected())
         {
             return;
@@ -125,6 +129,6 @@ public class MenuUIManager : MonoBehaviour
 
     private void OnRoomJoined(Photon.Realtime.Room room)
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
 }

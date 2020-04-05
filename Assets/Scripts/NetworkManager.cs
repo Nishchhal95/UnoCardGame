@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
+using ExitGames.Client.Photon;
 
 public class NetworkManager : MonoBehaviourPunCallbacks
 {
@@ -22,6 +23,9 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     public delegate void OnPhotonPlayerEnteredRoom(Player player);
     public static OnPhotonPlayerEnteredRoom onPhotonPlayerEnteredRoom;
+
+    public delegate void OnPhotonRoomPropertiesUpdate(ExitGames.Client.Photon.Hashtable changedProps);
+    public static OnPhotonRoomPropertiesUpdate onPhotonRoomPropertiesUpdate;
 
     public static bool isGameCreated = false;
 
@@ -47,6 +51,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public override void OnEnable()
     {
         base.OnEnable();
+        
     }
 
     public override void OnDisable()
@@ -64,7 +69,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     public void CreateRoom(string roomName)
     {
-        PhotonNetwork.CreateRoom(roomName);
+        PhotonNetwork.CreateRoom(roomName, new RoomOptions { PublishUserId = true, PlayerTtl = 10000, BroadcastPropsChangeToAll = true });
     }
 
     public void JoinRoom(string roomName)
@@ -113,10 +118,17 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     public override void OnJoinedRoom()
     {
-        Debug.Log("OnJoinedRoom");
+        Debug.Log("OnJoinedRoom: " + PhotonNetwork.CurrentRoom + " & Player Count: " + PhotonNetwork.CurrentRoom.PlayerCount);
         onPhotonRoomJoined?.Invoke(PhotonNetwork.CurrentRoom);
     }
 
+    public override void OnRoomPropertiesUpdate(ExitGames.Client.Photon.Hashtable propertiesThatChanged)
+    {
+        Debug.Log("OnRoomPropertiesUpdate");
+        onPhotonRoomPropertiesUpdate?.Invoke(propertiesThatChanged);
+    }
+
+    //This callback is recieved on Master Client as this acts as Server...
     public override void OnPlayerEnteredRoom(Player newPlayer)
     {
         Debug.Log("OnPlayerEnteredRoom: " + newPlayer.NickName);

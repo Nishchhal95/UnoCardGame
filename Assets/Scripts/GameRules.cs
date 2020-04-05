@@ -6,7 +6,7 @@ public static class GameRules
 {
     public static bool CanUseCard(CardController cardToPlayController)
     {
-        CardModel lastCard = _GameManager.Instance.lastCardController.cardModel;
+        CardModel lastCard = Multi_GameManager.Instance.lastCardController.cardModel;
         CardModel cardToMove = cardToPlayController.cardModel;
 
         //If Last Card is a Number Card

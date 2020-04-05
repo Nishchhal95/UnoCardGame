@@ -123,7 +123,7 @@ namespace Photon.Pun.UtilityScripts
         public const byte EvFinalMove = 2 + TurnManagerEventOffset;
 
         // keep track of message calls
-        private bool _isOverCallProcessed = false;
+        public bool _isOverCallProcessed = false;
 
         #region MonoBehaviour CallBack
 

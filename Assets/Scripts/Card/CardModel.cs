@@ -5,6 +5,9 @@ using UnityEngine;
 [System.Serializable]
 public class CardModel
 {
+    public string cardName = "";
+    public int cardID = -1;
+
     //Special Attributes
     public bool IsSpecial { get { return isSpecial; } set { isSpecial = value; } }
     [SerializeField] private bool isSpecial = false;
@@ -26,9 +29,9 @@ public class CardModel
     [SerializeField] private int cardNumber;
 
     //Image Refrence
-    public Sprite cardImage;
+    //public Sprite cardImage;
 
-    public SpriteRenderer cardSpriteRender;
+    //public SpriteRenderer cardSpriteRender;
 }
 
 //Card Color

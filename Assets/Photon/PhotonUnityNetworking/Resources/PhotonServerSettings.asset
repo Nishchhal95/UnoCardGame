@@ -36,5 +36,8 @@ MonoBehaviour:
   - RespawnSpaceship
   - OnAwakeRPC
   - AssignPlayerCards
+  - SpawnPlayers
+  - StartGAMEAFTERSHUFFLE
+  - Hello
   DisableAutoOpenWizard: 1
   ShowSettings: 1

@@ -21,7 +21,7 @@ public class CardController : MonoBehaviour
             return;
         }
 
-        if(!_GameManager.Instance.isItMyTurn(playerController.playerModel.playerID))
+        if(!Multi_GameManager.Instance.IsItMyTurn(playerController.playerModel.playerID))
         {
             Debug.Log("Not My Turn...");
             return;
@@ -47,11 +47,12 @@ public class CardController : MonoBehaviour
             if(objectsHit[i].gameObject.name.Equals("CenterDeck"))
             {
                 canMove = false;
-                playerController.playerModel.CardList.Remove(this);
-                LeanTween.move(gameObject, objectsHit[i].gameObject.transform.position, .5f).setEaseOutCubic().setOnComplete(() => 
-                {
-                    GameEventManager.onCardPlayed?.Invoke(this);
-                });
+                Multi_GameManager.Instance.CardPlayed(this);
+                //playerController.playerModel.CardList.Remove(this);
+                //LeanTween.move(gameObject, objectsHit[i].gameObject.transform.position, .5f).setEaseOutCubic().setOnComplete(() => 
+                //{
+                //    GameEventManager.onCardPlayed?.Invoke(this);
+                //});
 
                 break;
             }

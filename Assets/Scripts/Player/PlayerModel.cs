@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 //This should have a Player Controller and a Player View
 public class PlayerModel
 {
@@ -9,7 +10,7 @@ public class PlayerModel
     public GameObject cardPrefab;
 
     public string playerName;
-    public int playerID;
+    public string playerID;
 
     public List<CardController> CardList
     {

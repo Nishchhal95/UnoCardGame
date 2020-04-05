@@ -13,6 +13,7 @@ public class CardDealer : MonoBehaviour
 
     public Sprite[] cardSprites;
 
+    public Dictionary<string, Sprite> cardNameToImageDictionary = new Dictionary<string, Sprite>();
     
     public void Init()
     {
@@ -63,13 +64,16 @@ public class CardDealer : MonoBehaviour
         for (int i = 0; i < cardSprites.Length; i++)
         {
             string cardImageName = cardSprites[i].name;
+            cardNameToImageDictionary.Add(cardImageName, cardSprites[i]);
 
             string cardColor = cardImageName.Split('_')[0];
             string cardNumber = cardImageName.Split('_')[1];
 
+
             //Setting Base Values
             cards[i] = new CardModel();
-            cards[i].cardImage = cardSprites[i];
+            cards[i].cardName = cardImageName;
+            //cards[i].cardImage = cardSprites[i];
             cards[i].IsSpecial = false;
             cards[i].SpecialCardType = SpecialCard.None;
             cards[i].IsWild = false;
@@ -149,7 +153,7 @@ public class CardDealer : MonoBehaviour
                 WildCardType = cards[i].WildCardType,
                 CardColor = cards[i].CardColor,
                 CardNumber = cards[i].CardNumber,
-                cardImage = cards[i].cardImage
+                cardName = cards[i].cardName
             };
             cardsDeck.Add(card);
             deckIndex++;
@@ -168,10 +172,19 @@ public class CardDealer : MonoBehaviour
                 WildCardType = cards[i].WildCardType,
                 CardColor = cards[i].CardColor,
                 CardNumber = cards[i].CardNumber,
-                cardImage = cards[i].cardImage
+                cardName = cards[i].cardName
             };
             cardsDeck.Add(card);
             deckIndex++;
         }
+    }
+
+
+    public Sprite GetCardImageFromCardName(string cardName)
+    {
+        Sprite sprite = null;
+        cardNameToImageDictionary.TryGetValue(cardName, out sprite);
+
+        return sprite;
     }
 }

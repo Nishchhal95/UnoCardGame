@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainGame.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/MultiplayerScene.unity
+    guid: 522960121904623488619e3e7487dc6e
+  - enabled: 0
+    path: Assets/TurnManager_TEST/TurnManagerTEst.unity
+    guid: 3897bf52e9bb31b44bbfce874851750f
   m_configObjects: {}

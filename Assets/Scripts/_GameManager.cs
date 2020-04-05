@@ -3,12 +3,14 @@ using Photon.Realtime;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
+using Photon;
 using UnityEngine;
+using ExitGames.Client.Photon;
+using Newtonsoft.Json;
 
 //Game Manager should have all cards Info
 //Card Dealer should have an original deck and duplicate deck too for picking cards
-public class _GameManager : Singleton<_GameManager>
+public class _GameManager : Singleton<_GameManager>, IOnEventCallback
 {
     //GAME CONFIGURATION
     [Header("Game Configuration")]
@@ -36,21 +38,19 @@ public class _GameManager : Singleton<_GameManager>
 
     public CardController lastCardController = null;
 
-    [SerializeField] private PhotonView photonView;
+    [SerializeField] private List<Player> connectedPlayers = new List<Player>();
 
     private void Start()
     {
-        photonView = GetComponent<PhotonView>();
         if (NetworkManager.isGameCreated)
         {
             UIManager.Instance.DisplayGameCreatedPage(PhotonNetwork.CurrentRoom.Name);
         }
-        StartGame();
     }
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.A))
         {
             OnTurnComplete(1);
         }
@@ -61,6 +61,7 @@ public class _GameManager : Singleton<_GameManager>
         GameEventManager.onTurnOver += OnTurnComplete;
         GameEventManager.onCardPlayed += OnCardPlayed;
         NetworkManager.onPhotonPlayerEnteredRoom += OnPlayerJoined;
+        PhotonNetwork.AddCallbackTarget(this);
     }
 
     private void OnDisable()
@@ -68,41 +69,73 @@ public class _GameManager : Singleton<_GameManager>
         GameEventManager.onTurnOver -= OnTurnComplete;
         GameEventManager.onCardPlayed -= OnCardPlayed;
         NetworkManager.onPhotonPlayerEnteredRoom -= OnPlayerJoined;
+        PhotonNetwork.RemoveCallbackTarget(this);
     }
 
     private void OnPlayerJoined(Player photonPlayer)
     {
-        StartGame();
+        Debug.Log("[GameManager] : OnPlayerJoined");
+
+        //Adding players to a list
+        connectedPlayers.Add(photonPlayer);
+
+
+        //Server Calls this when Server sees a new player has joined and we have recieved enough players or not..
+        if (PhotonNetwork.CurrentRoom.PlayerCount <= 1)
+        {
+            return;
+        }
+        PhotonNetwork.RaiseEvent(12, null, new RaiseEventOptions { Receivers = ReceiverGroup.All }, new SendOptions() { DeliveryMode = DeliveryMode.Reliable });
     }
 
     private void StartGame()
     {
-        if(PhotonNetwork.CurrentRoom.PlayerCount <= 1)
-        {
-            return;
-        }
+        Debug.Log("Start Game: " + PhotonNetwork.CurrentRoom.PlayerCount);
         //Initialize Cards
         cardDealer.Init();
         Debug.Log("Cards are Ready...");
+
+        connectedPlayers = new List<Player>();
+        foreach (var playerItem in PhotonNetwork.CurrentRoom.Players.Values)
+        {
+            connectedPlayers.Add(playerItem);
+        }
 
         playerCount = PhotonNetwork.CurrentRoom.PlayerCount;
         //Spawn Players
         SpawnPlayers(playerCount);
 
         //Assign them Cards
+        if (PhotonNetwork.IsMasterClient)
+        {
+            int seed = UnityEngine.Random.Range(1, 999);
+            Shuffle(cardDealer.cardsDeck);
+
+            string jsonCardList = JsonConvert.SerializeObject(cardDealer.cardsDeck);
+            //string jsonCardList = JsonUtility.ToJson(cardDealer.cardsDeck);
+            
+            //NEED TO UPDATE SHUFFLED DECK FOR everyone
+            PhotonNetwork.RaiseEvent(13, new object[] { jsonCardList }, new RaiseEventOptions { Receivers = ReceiverGroup.All }, new SendOptions() {DeliveryMode = DeliveryMode.Reliable });
+        }
+    }
+
+
+    private void StartGAMEAFTERSHUFFLE(string cardJson)
+    {
+        Debug.Log("StartGAMEAFTERSHUFFLE: " + cardJson.Length);
+        List<CardModel> shuffledCardList = JsonConvert.DeserializeObject<List<CardModel>>(cardJson);
+        //List<CardModel> shuffledCardList = JsonUtility.FromJson<List<CardModel>>(cardJson);
+        Debug.Log("StartGAMEAFTERSHUFFLE: " + shuffledCardList.Count);
+
+        cardDealer.cardsDeck = shuffledCardList;
+
         AssignCardsToPlayers(initialCardsCount);
 
         //Play First Card
         PlayFirstCard();
 
         //Setup TurnManager
-        
-    }
-
-    [PunRPC]
-    public void OnAwakeRPC()
-    {
-        Debug.Log("Card Played");
+        turnManager.gameObject.SetActive(true);
     }
 
     //Turn Complete
@@ -166,23 +199,28 @@ public class _GameManager : Singleton<_GameManager>
     }
 
 
-    public bool isItMyTurn(int playerID)
+    public bool isItMyTurn(string playerID)
     {
-        if(PhotonNetwork.PlayerList[playerID].NickName.Equals(PhotonNetwork.LocalPlayer.NickName))
-        {
-            return true;
-        }
-
-        else
-        {
-            return false;
-        }
-        PlayerController currentTurnPlayer = players[turnManager.currentTurn];
-        if(currentTurnPlayer.playerModel.playerID == playerID)
+        if(playerID.Equals(connectedPlayers[turnManager.currentTurn % playerCount].UserId))
         {
             return true;
         }
         return false;
+        //if(PhotonNetwork.PlayerList[playerID].NickName.Equals(PhotonNetwork.LocalPlayer.NickName))
+        //{
+        //    return true;
+        //}
+
+        //else
+        //{
+        //    return false;
+        //}
+        //PlayerController currentTurnPlayer = players[turnManager.currentTurn];
+        //if(currentTurnPlayer.playerModel.playerID == playerID)
+        //{
+        //    return true;
+        //}
+        //return false;
     }
 
     public void TurnOverComplete()
@@ -209,11 +247,11 @@ public class _GameManager : Singleton<_GameManager>
         OnTurnComplete(1 * turnMoveDirection);
     }
 
-    private void PickCardFromSideDeck(int playerID)
+    private void PickCardFromSideDeck(string playerID)
     {
         List<CardModel> cardList = cardDealer.cardsDeck;
 
-        Shuffle(cardList);
+        //Shuffle(cardList);
 
         int indexToRemove = 0;
         CardController newCardFromSideDeck = SpawnCardFromCardModel(cardList[0]);
@@ -225,7 +263,7 @@ public class _GameManager : Singleton<_GameManager>
         cardList.RemoveAt(indexToRemove);
 
         //Assign Card to correct Player
-        PlayerController player = players.Find(x => x.playerModel.playerID == playerID);
+        PlayerController player = players.Find(x => x.playerModel.playerID.Equals(playerID));
 
         if(player == null)
         {
@@ -242,7 +280,7 @@ public class _GameManager : Singleton<_GameManager>
         for (int i = 0; i < playerCount; i++)
         {
             PlayerController playerController = Instantiate(playerPrefab, playerSpawnPoints[i]);
-            playerController.Init(i, "Player " + i);
+            playerController.Init(connectedPlayers[i].UserId, connectedPlayers[i].NickName);
             players.Add(playerController);
         }
     }
@@ -254,6 +292,7 @@ public class _GameManager : Singleton<_GameManager>
             List<CardController> cardControllers = new List<CardController>();
 
             //Out Picked Cards...
+            //PickCards(initialCardsCount, out cardControllers);
             PickCards(initialCardsCount, out cardControllers);
 
             //Assign These Cards to Players
@@ -265,7 +304,7 @@ public class _GameManager : Singleton<_GameManager>
     {
         List<CardModel> cardList = cardDealer.cardsDeck;
 
-        Shuffle(cardList);
+        //Shuffle(cardList);
 
         int indexToRemove = 0;
         for (int i = 0; i < cardList.Count; i++)
@@ -286,25 +325,13 @@ public class _GameManager : Singleton<_GameManager>
         cardList.RemoveAt(indexToRemove);
     }
 
-    //private void CreatePlayers()
-    //{
-    //    for (int i = 0; i < playerCount; i++)
-    //    {
-    //        GameObject playerGameObject = Instantiate(playerPrefab, transform);
-    //        PlayerController playerController = playerGameObject.GetComponent<PlayerController>();
-
-    //        List<CardModel> cards = PickCards(initialCardsCount);
-    //        playerController.SetInitialCards(cards);
-    //    }
-    //}
-
     private void PickCards(int count, out List<CardController> pickedCards)
     {
         //Using Card Deck From Card Dealer
         List<CardModel> cardList = cardDealer.cardsDeck;
         pickedCards = new List<CardController>();
 
-        Shuffle(cardList);
+        //Shuffle(cardList);
 
         for (int i = 0; i < count; i++)
         {
@@ -315,17 +342,31 @@ public class _GameManager : Singleton<_GameManager>
         }
     }
 
+    private void PickCards(int count, out List<int> pickedCardsIndexes)
+    {
+        List<CardModel> cardList = cardDealer.cardsDeck;
+        pickedCardsIndexes = new List<int>();
+
+        //Shuffle(cardList);
+
+        for (int i = 0; i < count; i++)
+        {
+            pickedCardsIndexes.Add(i);
+            //cardList.RemoveAt(0);
+        }
+    }
+
     private CardController SpawnCardFromCardModel(CardModel cardModel)
     {
         CardController cardController = Instantiate(cardPrefab, transform);
         cardController.cardModel = cardModel;
-        cardController.gameObject.AddComponent<SpriteRenderer>().sprite = cardController.cardModel.cardImage;
+        cardController.gameObject.AddComponent<SpriteRenderer>().sprite = cardDealer.GetCardImageFromCardName(cardModel.cardName);
         return cardController;
     }
 
-    private static System.Random rng = new System.Random();
     public static void Shuffle<T>(IList<T> list)
     {
+        System.Random rng = new System.Random();
         int n = list.Count;
         while (n > 1)
         {
@@ -336,4 +377,26 @@ public class _GameManager : Singleton<_GameManager>
             list[n] = value;
         }
     }
+
+    public void OnEvent(EventData photonEvent)
+    {
+        Debug.Log("ON EVENT: " + photonEvent.Code);
+        if (photonEvent.Code == 12)
+        {
+            StartGame();
+        }
+
+        else if (photonEvent.Code == 13)
+        {
+            object[] datas = (object[])photonEvent.CustomData;
+            string jsonData = (string)datas[0];
+
+            StartGAMEAFTERSHUFFLE(jsonData);
+        }
+    }
+}
+
+public enum GAME_EVENTS
+{
+    ShuffleCards
 }

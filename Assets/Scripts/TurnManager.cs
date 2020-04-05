@@ -9,17 +9,16 @@ public class TurnManager : PunTurnManager, IPunTurnManagerCallbacks
 {
     public int currentTurn = 0;
 
-
     private void Start()
     {
-        TurnDuration = 10f;
         TurnManagerListener = this;
-        PhotonNetwork.CurrentRoom.SetTurn(0);
-    }
+        TurnDuration = 10f;
 
-    private void Update()
-    {
-        currentTurn = Turn;
+        if (PhotonNetwork.IsMasterClient)
+        {
+            PhotonNetwork.CurrentRoom.SetTurn(-1, true);
+            BeginTurn();
+        }
     }
 
     public void TurnOver(int byHowMuch)
@@ -32,8 +31,6 @@ public class TurnManager : PunTurnManager, IPunTurnManagerCallbacks
         currentTurn = Mathf.Abs(currentTurn % _GameManager.Instance.playerCount);
 
         _GameManager.Instance.TurnOverComplete();
-
-        PhotonNetwork.CurrentRoom.SetTurn(currentTurn);
     }
 
     public void OnTurnBegins(int turn)
@@ -49,6 +46,15 @@ public class TurnManager : PunTurnManager, IPunTurnManagerCallbacks
     public void OnPlayerMove(Player player, int turn, object move)
     {
         Debug.Log("OnPlayerMove: Player: " + player.NickName +  " TURN: " + turn);
+
+        //TODO : Add player Move Logic
+        CardModel cardPlayer = (CardModel)move;
+
+
+        if(PhotonNetwork.IsMasterClient)
+        {
+            BeginTurn();
+        }
     }
 
     public void OnPlayerFinished(Player player, int turn, object move)
@@ -60,6 +66,10 @@ public class TurnManager : PunTurnManager, IPunTurnManagerCallbacks
     {
         currentTurn++;
         Debug.Log("OnPlayerFinished: " + turn);
-        PhotonNetwork.CurrentRoom.SetTurn(currentTurn);
+        //PhotonNetwork.CurrentRoom.SetTurn(currentTurn);
+        if (PhotonNetwork.IsMasterClient)
+        {
+            BeginTurn();
+        }
     }
 }
